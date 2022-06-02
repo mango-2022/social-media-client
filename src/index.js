@@ -14,7 +14,8 @@ import {AuthProvider} from "./context/auth-context";
 import App from './App'
 
 const httpLink = createHttpLink({
-    uri: 'http://localhost:5000'
+    // uri: 'http://localhost:5000'
+    uri: ' https://tranquil-plateau-52050.herokuapp.com/'
 })
 const authLink = setContext(() => {
     const token = localStorage.getItem('jwtToken')
